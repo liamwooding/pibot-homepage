@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'Virgo';
+  src: url('/fonts/virgo.ttf') format('truetype');
+}
+
+/*
+* Colours
+*/
+
+.pibot-red-bg {
+	background-color: #E74D4D;
+}
+
+.pibot-red {
+	color: #E74D4D;
+}
+
+.pibot-red-border {
+	border: 1px solid #E74D4D;
+}
+
+.pibot-blue-bg {
+	background-color: #4D4FE7;
+}
+
+.pibot-blue {
+	color: #4D4FE7;
+}
+
+.pibot-blue-border {
+	border: 1px solid #4D4FE7;
+}
+
+.pibot-purple-bg {
+	background-color: #8000FF;
+}
+
+.pibot-purple {
+	color: #8000FF;
+}
+
+.pibot-green-bg {
+	background-color: #7DE74D;
+}
+
+.pibot-green {
+	color: #7DE74D;
+}
+
+.pibot-green-border {
+	border: 1px solid #7DE74D;
+}
+
+.pibot-neutral-bg {
+	background-color: #00FFBF;
+}
+
+.pibot-neutral {
+	color: #00FFBF;
+}
+
+.pibot-orange-bg {
+	background-color: #FFBF00;
+}
+
+.pibot-orange {
+	color: #FFBF00;
+}
+
+.pibot-yellow-bg {
+	background-color: #D4E74D;
+}
+
+.pibot-yellow {
+	color: #D4E74D;
+}
+
+.pibot-yellow-border {
+	border: 1px solid #D4E74D;
+}
+
+/*
+*	Global
+*/
+
+body {
+	color: white;
+	background-color: #262626;
+}
+
+.navbar {
+	margin: 20px 0;
+}
+
+.navbar-nav li.active a {
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+}
+
+.navbar-nav li a {
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+	display: block;
+	text-align: center;
+	padding: 0;
+	width: 140px;
+	margin: 10px;
+	border-radius: 1px;
+	line-height: 140px;
+	overflow: visible;
+	font-size: 24px;
+	transition: background-color 0.15s linear,
+		color 0.15s linear;
+}
+
+.navbar-nav li a {
+	display: block;
+}
+
+.navbar-nav > li:not(.active) > a:hover, .navbar-nav > li:not(.active) > a:focus {
+	background-color: white;
+	color: black;
+}
+
+.navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus {
+	background-color: transparent;
+	color: white;
+	cursor: default;
+}
+
+.navbar-nav li span, .navbar-nav li i {
+	display: block;
+	text-align: center;
+}
+
+.navbar-nav li span {
+	font-weight: bold;
+	margin-top: 0.5em;
+	font-size: 16px;
+}
+
+.navbar > .navbar-brand {
+	background: url('/img/pibot-logo-white.png') center center no-repeat;
+	background-size: 80% auto;
+	text-align: left;
+	text-indent: -9999px;
+	display: block;
+	position: relative;
+	margin: 10px 0;
+	padding: 1px;
+	width: 140px;
+	height: 140px;
+	border: 2px solid white;
+	border-radius: 70px;
+	overflow: visible;
+	transition: background-color 0.15s linear;
+}
+
+.navbar > .navbar-brand:hover {
+	background: url('/img/pibot-logo-black.png') center center no-repeat;
+	background-color: white;
+	background-size: 80% auto;
+}
+
+/*
+*	Home
+*/
+
+#home .jumbotron {
+	background: transparent;
+	border: 1px solid #7DE74D;
+}
+
+#home .jumbotron > img {
+	display: block;
+	width: 100%;
+	margin: 2em auto;
+}
+
+#home .col-md-4 img {
+	display: block;
+	width: 66%;
+	margin: 0 auto;
+}
+
+#home .col-md-4 > * {
+	text-align: center;
+	font-size: 0.85em;
+}
+
+/*
+* Kit
+*/
+
+#kit .jumbotron {
+	background-color: transparent;
+	border: 1px #4D4FE7 solid;
+}
+
+.kit-graphic {
+	position: relative;
+	padding: 0;
+	margin-bottom: 2em;
+}
+
+.kit-graphic i {
+	width: 9%;
+	padding: 10px;
+	font-size: 56px;
+}
+
+.kit-graphic h3 {
+	margin: 0;
+	padding: 10px;
+}
+
+.kit-graphic p {
+	font-size: 1.6em;
+	height: 100%;
+}
