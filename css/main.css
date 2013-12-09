@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Virgo';
-  src: url('/fonts/virgo.ttf') format('truetype');
+  src: url('../fonts/virgo.ttf') format('truetype');
 }
 
 /*
@@ -88,6 +88,12 @@ body {
 	background-color: #262626;
 }
 
+#main {
+  /* Bring main content above the hexbins */
+  position: relative;
+  z-index: 1;
+}
+
 .navbar {
 	margin: 20px 0;
 }
@@ -140,7 +146,7 @@ body {
 }
 
 .navbar > .navbar-brand {
-	background: url('/img/pibot-logo-white.png') center center no-repeat;
+	background: url('../img/pibot-logo-white.png') center center no-repeat;
 	background-size: 80% auto;
 	text-align: left;
 	text-indent: -9999px;
@@ -157,9 +163,23 @@ body {
 }
 
 .navbar > .navbar-brand:hover {
-	background: url('/img/pibot-logo-black.png') center center no-repeat;
+	background: url('../img/pibot-logo-black.png') center center no-repeat;
 	background-color: white;
 	background-size: 80% auto;
+}
+
+#hexbins {
+  position: relative;
+}
+.hexbin {
+  position: absolute;
+  top: -279px;
+  left: -368px;
+}
+.hexagon {
+  fill: none;
+  stroke: #262626;
+  stroke-width: 0.5px;
 }
 
 /*
@@ -167,7 +187,8 @@ body {
 */
 
 #home .jumbotron {
-	background: transparent;
+	background: #262626;
+  background: rgba(38, 38, 38, 0.9);
 	border: 1px solid #7DE74D;
 }
 
