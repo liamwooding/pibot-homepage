@@ -121,15 +121,17 @@ h1, h2, h3 {
 	width: 140px;
 	margin: 10px;
 	border-radius: 1px;
-	line-height: 140px;
+	height: 140px;
 	overflow: visible;
 	font-size: 24px;
 	transition: background-color 0.15s linear,
 		color 0.15s linear;
 }
 
-.navbar-nav li a {
+.navbar-nav li i {
 	display: block;
+	padding: 20px;
+	text-align: center;
 }
 
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active a {
@@ -144,12 +146,6 @@ h1, h2, h3 {
 .navbar-nav li span, .navbar-nav li i {
 	display: block;
 	text-align: center;
-}
-
-.navbar-nav li span {
-	font-weight: bold;
-	margin-top: 0.5em;
-	font-size: 16px;
 }
 
 .navbar > .navbar-brand {
