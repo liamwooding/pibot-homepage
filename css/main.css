@@ -211,6 +211,8 @@ h1, h2, h3 {
 
 #pibot-carousel {
 	margin: 2em auto;
+	border-radius: 3px;
+	overflow: hidden;
 }
 
 #home .lead {
