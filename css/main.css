@@ -123,14 +123,12 @@ body {
 	display: block;
 }
 
-.navbar-nav > li:not(.active) > a:hover, .navbar-nav > li:not(.active) > a:focus {
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active a {
 	background-color: white;
-	color: black;
+	color: #262626;
 }
 
-.navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus {
-	background-color: transparent;
-	color: white;
+.navbar-nav > li.active a {
 	cursor: default;
 }
 
@@ -162,10 +160,20 @@ body {
 	transition: background-color 0.15s linear;
 }
 
-.navbar > .navbar-brand:hover {
+.navbar > .navbar-brand:hover, .navbar > .navbar-brand:focus, .navbar > .navbar-brand.active {
 	background: url('../img/pibot-logo-black.png') center center no-repeat;
 	background-color: white;
 	background-size: 80% auto;
+}
+
+.container .jumbotron {
+	background: #262626;
+  background: rgba(38, 38, 38, 0.9);
+	border-radius: 2px;
+}
+
+.footer {
+	text-align: center;
 }
 
 #hexbins {
@@ -187,9 +195,7 @@ body {
 */
 
 #home .jumbotron {
-	background: #262626;
-  background: rgba(38, 38, 38, 0.9);
-	border: 1px solid #7DE74D;
+	border: 1px solid #D4E74D;
 }
 
 #home .jumbotron > img {
@@ -214,8 +220,7 @@ body {
 */
 
 #kit .jumbotron {
-	background-color: transparent;
-	border: 1px #4D4FE7 solid;
+ 	border: 1px #4D4FE7 solid;
 }
 
 .kit-graphic {
@@ -238,4 +243,55 @@ body {
 .kit-graphic p {
 	font-size: 1.6em;
 	height: 100%;
+}
+
+/*
+* About
+*/
+
+#about .jumbotron {
+ 	border: 1px #E74D4D solid;
+}
+
+/*
+* Contact
+*/
+
+#contact .jumbotron {
+	border: 1px #7DE74D solid;
+}
+
+#contact .form-control {
+	border: 1px #7DE74D solid;
+	background-color: transparent;
+}
+
+#contact .btn[type="submit"] {
+	border: none;
+	background-color: #7DE74D;
+}
+
+#contact select.form-control {
+	-webkit-appearance: initial;
+  -moz-appearance: none;
+  appearance: none;
+	padding-left: 35px;
+}
+
+#contact .pibot-select {
+	position: relative;
+}
+
+#contact .pibot-select i {
+	position: absolute;
+	left: 12px;
+	top: 6px;
+}
+
+/*
+* Forms
+*/
+
+.form-control, .btn {
+	border-radius: 2px;
 }

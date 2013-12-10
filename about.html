@@ -15,7 +15,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body id="home">
+  <body id="about">
     <div id="main" class="container">
       <div class="navbar" role="navigation">
         <div class="navbar-header">
@@ -26,14 +26,14 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-        <a class="navbar-brand active" href="/">PiBot</a>
+        <a class="navbar-brand" href="/">PiBot</a>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="/kit.html" class="pibot-blue make-square">The kit</a>
                 </li>
-                <li>
-                    <a href="/about.html" class="pibot-red make-square">About us</a>
+                <li class="active">
+                    <a href="#" class="pibot-red make-square">About us</a>
                 </li>
                 <li>
                     <a href="/contact.html" class="pibot-yellow make-square">Contact</a>
@@ -43,29 +43,10 @@
       </div>
 
       <div class="jumbotron clearfix">
-        <h1>Pi Bot</h1>
-        <p class="lead">Pi Bot is an exciting new robot being developed for the Raspberry Pi computer. It is aimed at digital makers wanting to learn and have fun with technology.</p>
-        <img src="/img/building-pibot.png">
-
-        <div class="col-md-4">
-          <img src="/img/open-source-icon.svg">
-          <h2>Open Source</h2>
-          <p>The Pi Bot's design and software is open source - this means that you are free to tinker with the Pi Bot and change it in what ever way you want.</p>
-        </div>
-
-        <div class="col-md-4">
-          <img src="/img/maker-icon.svg">
-            <h2>Made for Makers</h2>
-            <p>Pi Bot is made from a Do-It-Yourself kit. It's fun and easy to put together and you'll learn something in the process.</p>
-        </div>
-
-        <div class="col-md-4">
-          <img src="/img/pi-icon.svg">
-          <h2>For the Raspberry Pi</h2>
-          <p>The Pi Bot is designed for the Raspberry Pi mini-computer. Find out more about the Raspberry Pi <a href="http://www.raspberrypi.org">here</a>.</p>
-        </div>
+        <h1>About us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      
+
       <footer class="footer">
         <p>&copy; 2013 The Pi Club - Raspberry Pi is a trademark of the Raspberry Pi foundation.</p>
       </footer>
@@ -91,7 +72,7 @@
 
         var color = d3.scale.linear()
             .domain([0, 20])
-            .range(["#FFFFFF", "#262626"])
+            .range(["#E74D4D", "#262626"])
             .interpolate(d3.interpolateLab)
 
         var hexbin = d3.hexbin()
