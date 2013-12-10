@@ -88,6 +88,15 @@ body {
 	background-color: #262626;
 }
 
+a, p, span {
+	font-weight: 100;
+	letter-spacing: 0.8px;
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+}
+
 #main {
   /* Bring main content above the hexbins */
   position: relative;
@@ -202,6 +211,10 @@ body {
 	display: block;
 	width: 100%;
 	margin: 2em auto;
+}
+
+#home .lead {
+	letter-spacing: 0;
 }
 
 #home .col-md-4 img {
