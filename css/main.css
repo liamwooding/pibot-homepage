@@ -209,6 +209,10 @@ h1, h2, h3 {
 	margin: 2em auto;
 }
 
+#pibot-carousel {
+	margin: 2em auto;
+}
+
 #home .lead {
 	letter-spacing: 0;
 }

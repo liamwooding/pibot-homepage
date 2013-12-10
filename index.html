@@ -1,85 +1,135 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PiBot - Raspberry Pi Robot</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<head>
+  <title>PiBot - Raspberry Pi Robot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body id="home">
-    <div id="main" class="container">
-      <div class="navbar" role="navigation">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <a class="navbar-brand active" href="/">PiBot</a>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="/kit.html" class="pibot-blue make-square"><i class="fa fa-puzzle-piece"></i><span>The kit</span></a>
-                </li>
-                <li>
-                    <a href="/about.html" class="pibot-red make-square"><i class="fa fa-keyboard-o"></i><span>About us</span></a>
-                </li>
-                <li>
-                    <a href="/contact.html" class="pibot-yellow make-square"><i class="fa fa-pencil"></i><span>Contact</span></a>
-                </li>
-            </ul>
-        </div>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body id="home">
+  <div id="main" class="container">
+    <div class="navbar" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-
-      <div class="jumbotron clearfix">
-        <h1>PiBot</h1>
-        <p class="lead">PiBot is an exciting new robot being developed for the Raspberry Pi computer. It is aimed at digital makers wanting to learn and have fun with technology.</p>
-        <img src="img/building-pibot.png" class="img-rounded">
-
-        <div class="col-md-4">
-          <img src="img/open-source-icon.svg">
-          <h2>Open Source</h2>
-          <p>The PiBot's design and software is open source - this means that you are free to tinker with the PiBot and change it in what ever way you want.</p>
-        </div>
-
-        <div class="col-md-4">
-          <img src="img/maker-icon.svg">
-            <h2>Made for Makers</h2>
-            <p>PiBot is made from a Do-It-Yourself kit. It's fun and easy to put together and you'll learn something in the process.</p>
-        </div>
-
-        <div class="col-md-4">
-          <img src="img/pi-icon.svg">
-          <h2>For the Raspberry Pi</h2>
-          <p>The PiBot is designed for the Raspberry Pi mini-computer. Find out more about the Raspberry Pi <a href="http://www.raspberrypi.org">here</a>.</p>
-        </div>
+      <a class="navbar-brand active" href="/">PiBot</a>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/kit.html" class="pibot-blue make-square"> <i class="fa fa-puzzle-piece"></i>
+              <span>The kit</span>
+            </a>
+          </li>
+          <li>
+            <a href="/about.html" class="pibot-red make-square"> <i class="fa fa-keyboard-o"></i>
+              <span>About us</span>
+            </a>
+          </li>
+          <li>
+            <a href="/contact.html" class="pibot-yellow make-square">
+              <i class="fa fa-pencil"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
       </div>
-
-      <footer class="footer">
-        <p>&copy; 2013 The Pi Club - Raspberry Pi is a trademark of the Raspberry Pi foundation.</p>
-      </footer>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <div class="jumbotron clearfix">
+      <h1>PiBot</h1>
+      <p class="lead">
+        PiBot is an exciting new robot being developed for the Raspberry Pi computer. It is aimed at digital makers wanting to learn and have fun with technology.
+      </p>
+      
+      <div id="pibot-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!-- <ol class="carousel-indicators">
+          <li data-target="#pibot-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#pibot-carousel" data-slide-to="1"></li>
+          <li data-target="#pibot-carousel" data-slide-to="2"></li>
+        </ol> -->
 
-    <script src="http://d3js.org/d3.v3.min.js"></script>
-    <script src="http://d3js.org/d3.hexbin.v0.min.js?5c6e4f0"></script>
-    <script>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/building-pibot.png" class="img-rounded" alt="Children building a PiBot at the Pi Club workshop">
+          </div>
+
+          <div class="item">
+            <img src="img/chalkboard.jpg" class="img-rounded">
+          </div>
+
+          <div class="item">
+            <img src="img/robot-kit-1.jpg" class="img-rounded">
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#pibot-carousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#pibot-carousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <img src="img/open-source-icon.svg">
+        <h2>Open Source</h2>
+        <p>
+          The PiBot's design and software is open source - this means that you are free to tinker with the PiBot and change it in what ever way you want.
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <img src="img/maker-icon.svg">
+        <h2>Made for Makers</h2>
+        <p>
+          PiBot is made from a Do-It-Yourself kit. It's fun and easy to put together and you'll learn something in the process.
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <img src="img/pi-icon.svg">
+        <h2>For the Raspberry Pi</h2>
+        <p>
+          The PiBot is designed for the Raspberry Pi mini-computer. Find out more about the Raspberry Pi
+          <a href="http://www.raspberrypi.org">here</a>
+          .
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>
+        &copy; 2013 The Pi Club - Raspberry Pi is a trademark of the Raspberry Pi foundation.
+      </p>
+    </footer>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/d3.hexbin.v0.min.js?5c6e4f0"></script>
+  <script>
       function hexbinify (el) {
         var margin = {top: 20, right: 20, bottom: 30, left: 40}
           , width = 900 - margin.left - margin.right
@@ -130,8 +180,8 @@
             rotateBins()
           })
         })
-      }()
+      }();
 
     </script>
-  </body>
+</body>
 </html>
