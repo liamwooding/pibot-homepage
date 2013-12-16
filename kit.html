@@ -204,7 +204,7 @@
             .style("fill", function(d) { return color(d.length) })
       }
 
-      var binCt = $("<div/>").attr("id", "hexbins").addClass("container").prependTo(document.body)
+      var binCt = $("<div/>").attr("id", "hexbins").addClass("container").appendTo($('#main'))
         , bins = $("<div/><div/>").addClass("hexbin").css("opacity", 0).appendTo(binCt)
         , bin = bins.first()
 
