@@ -307,17 +307,17 @@ h1, h2, h3 {
 */
 
 #contact .jumbotron {
-	border: 1px #7DE74D solid;
+	border: 1px #D4E74D solid;
 }
 
 #contact .form-control {
-	border: 1px #7DE74D solid;
+	border: 1px #D4E74D solid;
 	background-color: transparent;
 }
 
 #contact .btn[type="submit"] {
 	border: none;
-	background-color: #7DE74D;
+	background-color: #D4E74D;
 }
 
 #contact select.form-control {
@@ -343,4 +343,22 @@ h1, h2, h3 {
 
 .form-control, .btn {
 	border-radius: 2px;
+}
+
+/*
+*	Workshop
+*/
+
+#workshop .accordion-toggle {
+	color: white;
+	text-decoration: underline;
+}
+
+#workshop .jumbotron {
+	border: 1px #7DE74D solid;
+}
+
+#workshop .jumbotron .row {
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
