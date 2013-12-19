@@ -351,3 +351,27 @@ h1, h2, h3 {
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
+
+#workshop .svg-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+#workshop .svg-content {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*
+*	Pi-oneers
+*/
+
+#pioneer .jumbotron {
+ 	border: 1px #E74D4D solid;
+}
