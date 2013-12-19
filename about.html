@@ -35,19 +35,19 @@
     						</a>
     					</li>
     					<li>
-    						<a href="workshop.html" class="pibot-green make-square">
-    							<i class="fa fa-wrench"></i>
+    						<a href="workshop.html" class="pibot-green make-square"> <i class="fa fa-wrench"></i>
     							<span>Workshops</span>
     						</a>
     					</li>
-    					<li class="active">
-    					<a href="#" class="pibot-red make-square"> <i class="fa fa-info"></i>
-    							<span>About us</span>
+    					<li>
+    						<a href="pioneer.html" class="pibot-red make-square">
+    							<i class="fa fa-rocket"></i>
+    							<span>Pi-oneers</span>
     						</a>
     					</li>
-    					<li>
-    						<a href="contact.html" class="pibot-yellow make-square">
-    							<i class="fa fa-pencil"></i>
+    					<li class="active">
+    						<a href="#" class="pibot-yellow make-square">
+    							<i class="fa fa-phone"></i>
     							<span>Contact</span>
     						</a>
     					</li>
@@ -108,7 +108,7 @@
     			.style("fill", function(d) { return color(d.length) })
     		}
 
-    		var binCt = $("<div/>").attr("id", "hexbins").addClass("container").appendTo($('#main'))
+    		var binCt = $("<div/>").attr("id", "hexbins").addClass("container").prependTo($('body'))
     		, bins = $("<div/><div/>").addClass("hexbin").css("opacity", 0).appendTo(binCt)
     		, bin = bins.first()
 

@@ -79,6 +79,10 @@
 	border: 1px solid #D4E74D;
 }
 
+.pi-raspberry {
+	color: #D00635;
+}
+
 /*
 *	Global
 */
@@ -186,9 +190,7 @@ h1, h2, h3 {
 */
 
 #hexbins {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
 }
 
 .hexbin {
@@ -201,19 +203,6 @@ h1, h2, h3 {
   fill: none;
   stroke: #262626;
   stroke-width: 0.5px;
-}
-
-#main > * {
-	z-index: 2;
-}
-
-#main #hexbins {
-	z-index: 0;
-}
-
-.jumbotron > * {
-	z-index: 1;
-	position: relative;
 }
 
 /*

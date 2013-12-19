@@ -15,7 +15,7 @@
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body id="home">
+<body id="kit">
 	<div id="main" class="container">
 		<div class="navbar" role="navigation">
 			<div class="navbar-header">
@@ -26,7 +26,7 @@
 					<span class="icon-bar"></span>
 				</button>
 			</div>
-			<a class="navbar-brand active" href="index.html">PiBot</a>
+			<a class="navbar-brand" href="index.html">PiBot</a>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li>
@@ -39,8 +39,8 @@
 							<span>Workshops</span>
 						</a>
 					</li>
-					<li>
-						<a href="pioneer.html" class="pibot-red make-square">
+					<li class="active">
+						<a href="#" class="pibot-red make-square">
 							<i class="fa fa-rocket"></i>
 							<span>Pi-oneers</span>
 						</a>
@@ -55,86 +55,127 @@
 			</div>
 		</div>
 
-		<div class="jumbotron clearfix">
-			<h1>PiBot</h1>
-			<p class="lead">
-				PiBot is an exciting new robot being developed for the Raspberry Pi computer. It is aimed at digital makers wanting to learn and have fun with technology.
+		<div class="jumbotron">
+			<h2>What's in the box?</h2>
+
+			<div class="row">
+				<div class="col-md-4">
+					<img src="img/kit-box.png" class="img-responsive">
+				</div>
+				<div class="col-md-4">
+					<img src="img/pibot-full.jpg" class="img-responsive img-rounded">
+				</div>
+				<div class="col-md-4">
+					<img src="img/kit-unboxed.png" class="img-responsive">
+				</div>
+			</div>
+
+			<ul>
+				<li>
+					<b>Chassis components</b> (9 pieces)
+				</li>
+				<li>
+					<b>PiBot Interface Board</b> including an arduino compatible microcontroller
+				</li>
+				<li>
+					<b>PiBot Audio Interface Board</b> to drive the speaker
+				</li>
+				<li>
+					<b>Speaker</b> 2W and full range
+				</li>
+				<li>
+					<b>Neopixels</b> 8x programmable colour LEDs on a stick
+				</li>
+				<li>
+					<b>Gear assemblies, motor drivers & wheels</b> because PiBot likes to move it!
+				</li>
+				<li>
+					<b>Micro servo</b> controls the camera's tilt
+				</li>
+				<li>
+					<b>Stepper motor</b> lets the camera pan left & right
+				</li>
+				<li>
+					<b>Set of cables</b>
+				</li>
+				<li>
+					<b>Set of essential screws and spacers</b>
+				</li>
+				<li>
+					<b>Battery holder</b> to hold 4 x AA batteries
+				</li>
+				<li>
+					<b>Basic manual</b> that shows how to put it all together
+				</li>
+				<li>
+					<b>A lovely wooden box</b> that you can make a Bot House from
+				</li>
+				<li>
+					<b>A free upgrade</b> to a v1.0 chassis when its ready
+				</li>
+			</ul>
+
+			<div style="margin:2em 0;">
+				<img src="img/bg-stripe1.png" class="img-responsive img-thumbnail">
+			</div>
+
+			<h2>What's not in the box?</h2>
+
+			<ul>
+				<li>
+					<b>Rasberry Pi</b>
+				</li>
+				<li>
+					<b>SD card</b>
+				</li>
+				<li>
+					<b>Raspberry Pi camera module</b>
+				</li>
+				<li>
+					<b>4 x AA batteries</b> - rechargeable ones are good!
+				</li>
+				<li>
+					<b>Mini Wifi module</b> for communicating to PiBot wirelessly
+				</li>
+				<li>
+					<b>(Optionally) a microphone and audio interface</b> to explore voice recognition capability
+				</li>
+			</ul>
+
+			<h2>What next?</h2>
+
+			<p>
+				Once you have your pre-release kit. We'll give you access to a new part of the website to help you get started.  This will include:
 			</p>
 
-			<div id="pibot-carousel" class="carousel slide" data-ride="carousel">
-				<!-- Indicators -->
-				<!-- <ol class="carousel-indicators">
-				<li data-target="#pibot-carousel" data-slide-to="0" class="active"></li>
-				<li data-target="#pibot-carousel" data-slide-to="1"></li>
-				<li data-target="#pibot-carousel" data-slide-to="2"></li>
-			</ol>
-			-->
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="img/building-pibot.png" alt="Children building a PiBot at the Pi Club workshop"></div>
-
-				<div class="item">
-					<img src="img/chalkboard.jpg"></div>
-
-				<div class="item">
-					<img src="img/robot-kit-1.jpg"></div>
-			</div>
-
-			<!-- Controls -->
-			<a class="left carousel-control" href="#pibot-carousel" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-			</a>
-			<a class="right carousel-control" href="#pibot-carousel" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-			</a>
+			<ul>
+				<li><b>Building and construction</b></li>
+				<li><b>Wireless set up</b></li>
+				<li><b>Controlling the PiBot's hardware</b></li>
+				<li><b>Training your PiBot to talk</b></li>
+				<li><b>Using the PiBot for remote time-lapse photography</b></li>
+				<li><b>Wireless video streaming with the PiBot</b></li>
+				<li><b>Please request more!</b></li>
+			</ul>
 		</div>
 
-		<div class="row">
-			<div class="col-md-4">
-				<img src="img/open-source-icon.svg">
-				<h2>Open Source</h2>
-				<p>
-					The PiBot's design and software is open source - this means that you are free to tinker with the PiBot and change it in what ever way you want.
-				</p>
-			</div>
-
-			<div class="col-md-4">
-				<img src="img/maker-icon.svg">
-				<h2>Made for Makers</h2>
-				<p>
-					PiBot is made from a Do-It-Yourself kit. It's fun and easy to put together and you'll learn something in the process.
-				</p>
-			</div>
-
-			<div class="col-md-4">
-				<img src="img/pi-icon.svg">
-				<h2>For the Raspberry Pi</h2>
-				<p>
-					The PiBot is designed for the Raspberry Pi mini-computer. Find out more about the Raspberry Pi
-					<a href="http://www.raspberrypi.org">here</a>
-					.
-				</p>
-			</div>
-		</div>
+		<footer class="footer">
+			<p>
+				&copy; 2013 The Pi Club - Raspberry Pi is a trademark of the Raspberry Pi foundation.
+			</p>
+		</footer>
 	</div>
 
-	<footer class="footer">
-		<p>
-			&copy; 2013 The Pi Club - Raspberry Pi is a trademark of the Raspberry Pi foundation.
-		</p>
-	</footer>
-</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
 
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/d3.hexbin.v0.min.js?5c6e4f0"></script>
-<script>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="http://d3js.org/d3.hexbin.v0.min.js?5c6e4f0"></script>
+	<script>
       function hexbinify (el) {
         var margin = {top: 20, right: 20, bottom: 30, left: 40}
           , width = 900 - margin.left - margin.right
@@ -146,7 +187,7 @@
 
         var color = d3.scale.linear()
             .domain([0, 20])
-            .range(["#FFFFFF", "#262626"])
+            .range(["#4D4FE7", "#262626"])
             .interpolate(d3.interpolateLab)
 
         var hexbin = d3.hexbin()
@@ -185,7 +226,7 @@
             rotateBins()
           })
         })
-      }();
+      }()
 
     </script>
 </body>
