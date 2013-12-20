@@ -19,6 +19,17 @@ server.route({
 // Define the routes
 server.route({
     method: 'GET',
+    path: '/index',
+    handler: {
+        file: {
+            path: './index.html'
+        }
+    }
+});
+
+// Define the routes
+server.route({
+    method: 'GET',
     path: '/kit',
     handler: {
         file: {
