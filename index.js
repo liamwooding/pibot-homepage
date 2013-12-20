@@ -16,6 +16,50 @@ server.route({
     }
 });
 
+// Define the routes
+server.route({
+    method: 'GET',
+    path: '/kit',
+    handler: {
+        file: {
+            path: './kit.html'
+        }
+    }
+});
+
+// Define the routes
+server.route({
+    method: 'GET',
+    path: '/workshop',
+    handler: {
+        file: {
+            path: './workshop.html'
+        }
+    }
+});
+
+// Define the routes
+server.route({
+    method: 'GET',
+    path: '/pioneer',
+    handler: {
+        file: {
+            path: './pioneer.html'
+        }
+    }
+});
+
+// Define the routes
+server.route({
+    method: 'GET',
+    path: '/contact',
+    handler: {
+        file: {
+            path: './contact.html'
+        }
+    }
+});
+
 server.route({
     method: 'GET',
     path: '/{path*}',

@@ -118,16 +118,20 @@ h1, h2, h3 {
 	margin: 20px 0;
 }
 
+.navbar-nav > li:last-child a {
+	margin-right: 0;
+}
+
 .navbar-nav li.active a {
-	border-bottom: 1px solid;
-	border-top: 1px solid;
+	border-bottom: 3px solid;
+	border-top: 3px solid;
 }
 
 .navbar-nav li a {
 	background-color: #262626;
   background-color: rgba(38, 38, 38, 0.9);
-	border-bottom: 1px solid;
-	border-top: 1px solid;
+	border-bottom: 3px solid;
+	border-top: 3px solid;
 	display: block;
 	text-align: center;
 	padding: 35px 0 0;
@@ -172,7 +176,7 @@ h1, h2, h3 {
 	padding: 1px;
 	width: 140px;
 	height: 140px;
-	border: 2px solid white;
+	border: 3px solid white;
 	border-radius: 70px;
 	overflow: visible;
 	transition: background-color 0.15s linear;
@@ -219,7 +223,7 @@ h1, h2, h3 {
 */
 
 #home .jumbotron {
-	border: 1px solid white;
+	border: 3px solid white;
 }
 
 #home .jumbotron > img {
@@ -258,7 +262,7 @@ h1, h2, h3 {
 */
 
 #kit .jumbotron {
- 	border: 1px #4D4FE7 solid;
+ 	border: 3px #4D4FE7 solid;
 }
 
 #kit .jumbotron .row {
@@ -301,7 +305,7 @@ h1, h2, h3 {
 */
 
 #about .jumbotron {
- 	border: 1px #E74D4D solid;
+ 	border: 3px #E74D4D solid;
 }
 
 /*
@@ -309,11 +313,11 @@ h1, h2, h3 {
 */
 
 #contact .jumbotron {
-	border: 1px #D4E74D solid;
+	border: 3px #D4E74D solid;
 }
 
 #contact .form-control {
-	border: 1px #D4E74D solid;
+	border: 3px #D4E74D solid;
 	background-color: transparent;
 }
 
@@ -375,7 +379,7 @@ h1, h2, h3 {
 }
 
 #workshop .jumbotron {
-	border: 1px #7DE74D solid;
+	border: 3px #7DE74D solid;
 }
 
 #workshop .jumbotron .row {
@@ -472,7 +476,7 @@ h1, h2, h3 {
 */
 
 #pioneer .jumbotron {
- 	border: 1px #E74D4D solid;
+ 	border: 3px #E74D4D solid;
 }
 
 #pioneer .jumbotron ul {
