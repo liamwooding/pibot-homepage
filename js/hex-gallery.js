@@ -4,18 +4,19 @@ $(document).ready(function() {
 	
 	var hexGallery = $('#hex-gallery'),
 			thumbs = [
-			'img/workshops/1.jpg',
-			'img/workshops/2.jpg',
-			'img/workshops/3.jpg',
-			'img/workshops/4.jpg',
-			'img/workshops/5.jpg',
-			'img/workshops/6.jpg',
-			'img/workshops/7.jpg',
-			'img/workshops/8.jpg',
-			'img/workshops/9.jpg',
-			'img/workshops/10.jpg',
-			'img/workshops/11.jpg',
-			'img/workshops/12.jpg'
+			'img/hexagons/1.jpg',
+			'img/hexagons/2.jpg',
+			'img/hexagons/3.jpg',
+			'img/hexagons/4.jpg',
+			'img/hexagons/5.jpg',
+			'img/hexagons/6.jpg',
+			'img/hexagons/7.jpg',
+			'img/hexagons/8.jpg',
+			'img/hexagons/9.jpg',
+			'img/hexagons/10.jpg',
+			'img/hexagons/11.jpg',
+			'img/hexagons/12.jpg',
+			'img/hexagons/13.jpg'
 		],
 		imgs = [
 			'img/workshops/1.jpg',
@@ -29,71 +30,57 @@ $(document).ready(function() {
 			'img/workshops/9.jpg',
 			'img/workshops/10.jpg',
 			'img/workshops/11.jpg',
-			'img/workshops/12.jpg'
+			'img/workshops/12.jpg',
+			'img/workshops/13.jpg'
 		],
 		rowNumber = 0,
-		imageTemplate = '<image xlink:href="#" preserveAspectRatio="none" clip-path="url(#hexagon)" height="150" width="175" id="pic1"></image>',
-		rowTemplate = $('<g></g>'),
-		mostRecentThumb = null,
-		mostRecentRow = null,
-		containerWidth = hexGallery.width();
+		containerWidth = hexGallery.width(),
+		hexWidth = 150,
+		hexPadding = 5;
 
-		var hexPerRow = Math.floor(containerWidth / 150),
+		var hexPerRow = Math.floor(containerWidth / hexWidth),
+			rowOffset = hexWidth * 0.88,
+			hexHeight = hexWidth * 1.1666667,
 			rows = thumbs.length / hexPerRow,
 			i = 0;
 
-		var svg = SVG('hex-gallery').size(containerWidth, 180 * rows);
-		var hexagon = svg.polygon('75,0 75,43 0,85 -75,43 -75,-43 0,-85 75,-43'),
-		hexContainer = svg.group();
-
-		hexContainer.attr({ x: 0, y: 0 }).size(containerWidth, 190 * rows)
+		var svg = SVG('hex-gallery').size(containerWidth, (hexHeight * 1.333) * rows)
+		svg.viewbox(0,0,containerWidth, hexHeight * rows),
+		lightBoxContainer = $('#light-box-container')
 
 	for (var j = 0; j < rows; j++) {
-		if (i > thumbs.length) {
+		if (i >= thumbs.length) {
 			break;
 		}
 
-		var group = hexContainer.group()
-		group.size(containerWidth, 190)
-		if (rowNumber%2 != 0) {
-			group.translate(75, 0)
-		}
+		var row = svg.group()
+		row.size(containerWidth, hexHeight)
 
-		group.translate(0, 180 * rowNumber)
+		row.translate(rowNumber%2 != 0 ? (hexWidth + hexPadding) / 2 : 0, rowOffset * rowNumber)
 
 		for (var k = 0; k < hexPerRow; k++) {
-			if (i > thumbs.length) {
+			if (i >= thumbs.length) {
 				break;
 			}
 
-			var image = svg.image(thumbs[i], 150, 175).translate(155 * k, 0)
+			var image = svg.image(thumbs[i], hexWidth, hexHeight).move((hexWidth + hexPadding) * k, 0)
+			var hexagon = svg.polygon('75,0 75,43 0,85 -75,43 -75,-43 0,-85 75,-43')
+			hexagon.move(image.attr('x'), image.attr('y'))
+			image.attr('data-lightbox-index', i)
+			image.attr('class', 'hexImage')
+			row.add(image)
 			image.clipWith(hexagon)
-			group.add(image)
+			var lightBoxImg = $('<a href="'+ imgs[i] +'" data-gallery="hexLightbox" data-toggle="lightbox"></a>')
+			lightBoxImg.appendTo(lightBoxContainer)
+
 			i++
 		}
+
 		rowNumber++
 	}
 
-
-		// if (mostRecentThumb == null) {
-		// 	mostRecentRow = rowTemplate.clone()
-		// 	hexContainer.append(mostRecentRow)
-		// 	mostRecentThumb = imageTemplate.clone()
-		// 	mostRecentThumb.find('image').attr('xlink:href', thumbs[i])
-		// 	mostRecentRow.append(mostRecentThumb)
-		// } else if (mostRecentThumb.position().left + (mostRecentThumb.width() * 2) < mostRecentRow.width()) {
-		// 	mostRecentThumb = $(imageTemplate)
-		// 	mostRecentThumb.find('image').attr('xlink:href', thumbs[i])
-		// 	mostRecentRow.append(mostRecentThumb)
-		// 	mostRecentThumb.attr('transform', mostRecentThumb.width() + 5 + ' 0')
-		// } else {
-		// 	rowNumber++
-		// 	mostRecentRow = $('<g></g>')
-		// 	hexContainer.append(mostRecentRow)
-		// 	if (rowNumber%2 != 0) {
-		// 		mostRecentRow.attr('transform', 75 + ' ' + (155 * rowNumber))
-		// 	}
-		// 	mostRecentThumb = $(imageTemplate)
-		// 	mostRecentThumb.find('image').attr('xlink:href', thumbs[i])
-		// }
+	$('#hex-gallery').on('click', '.hexImage', function() {
+		console.log($(this).attr('data-lightbox-index'))
+		lightBoxContainer.find('a').eq($(this).attr('data-lightbox-index')).click()
+	})
 })
