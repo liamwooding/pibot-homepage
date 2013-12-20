@@ -117,6 +117,8 @@ h1, h2, h3 {
 }
 
 .navbar-nav li a {
+	background-color: #262626;
+  background-color: rgba(38, 38, 38, 0.9);
 	border-bottom: 1px solid;
 	border-top: 1px solid;
 	display: block;
@@ -378,8 +380,33 @@ h1, h2, h3 {
 	opacity: 1;
 }
 
+#workshop .ekko-lightbox .modal-dialog {
+	padding-top: 0;
+}
+
 #workshop .ekko-lightbox .modal-content {
 	background-color: transparent;
+}
+
+#workshop .ekko-lightbox .modal-header {
+	border: none;
+	padding: 0 2em;
+	text-align: right;
+}
+
+#workshop .ekko-lightbox .modal-header h4 {
+	display: none;
+}
+
+#workshop .ekko-lightbox .modal-header .close {
+	font-size: 56px;
+	float: none;
+	opacity: 1;
+	text-shadow: none;
+}
+
+#workshop .ekko-lightbox .modal-header .close:hover {
+	color: white;
 }
 
 #workshop .ekko-lightbox .ekko-lightbox-container {
@@ -390,6 +417,11 @@ h1, h2, h3 {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+}
+
+#workshop .ekko-lightbox .ekko-lightbox-nav-overlay a:hover {
+	color: white;
+	text-decoration: none;
 }
 
 #workshop .ekko-lightbox .ekko-lightbox-nav-overlay a:nth-child(1) {
