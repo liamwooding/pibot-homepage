@@ -8,4 +8,8 @@ $(document).ready(function() {
 			$(this).height($(this).width());
 		});
 	});
+
+	$('.accordion-heading').on('click', function() {
+		$(this).toggleClass('open')
+	})
 });

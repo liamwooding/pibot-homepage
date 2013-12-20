@@ -356,6 +356,24 @@ h1, h2, h3 {
 	text-decoration: underline;
 }
 
+#workshop .accordion-heading .accordion-marker-closed {
+	display: inline-block;
+	width: 0.75em;
+}
+
+#workshop .accordion-heading .accordion-marker-open {
+	display: none;
+}
+
+#workshop .accordion-heading.open .accordion-marker-closed {
+	display: none;
+}
+
+#workshop .accordion-heading.open .accordion-marker-open {
+	display: inline-block;
+	width: 0.75em;
+}
+
 #workshop .jumbotron {
 	border: 1px #7DE74D solid;
 }
