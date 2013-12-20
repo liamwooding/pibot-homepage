@@ -369,6 +369,7 @@ h1, h2, h3 {
 }
 
 #workshop .hexImage {
+	cursor: pointer;
 	opacity: 0.6;
 	transition: opacity 0.15s linear;
 }
@@ -394,12 +395,14 @@ h1, h2, h3 {
 #workshop .ekko-lightbox .ekko-lightbox-nav-overlay a:nth-child(1) {
 	position: absolute;
 	font-size: 32px;
+	top: 48%;
 	left: -20px;
 }
 
 #workshop .ekko-lightbox .ekko-lightbox-nav-overlay a:nth-child(2) {
 	position: absolute;
 	font-size: 32px;
+	top: 48%;
 	right: -20px;
 }
 

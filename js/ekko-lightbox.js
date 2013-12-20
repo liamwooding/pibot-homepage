@@ -251,9 +251,9 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
       width_inc_padding = width + this.padding.left + this.padding.right;
       this.modal.find('.modal-content').css('width', width_inc_padding);
       this.modal.find('.modal-dialog').css('width', width_inc_padding + 20);
-      this.lightbox_container.find('a').css('padding-top', function() {
-        return $(this).parent().height() / 2;
-      });
+      // this.lightbox_container.find('a').css('padding-top', function() {
+      //   return $(this).parent().height() / 2;
+      // });
       return this;
     },
     checkImageDimensions: function(max_width) {
