@@ -19,8 +19,8 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
       title: null,
       footer: null,
       remote: null,
-      left_arrow_class: '.fa .fa-angle-left pibot-green',
-      right_arrow_class: '.fa .fa-angle-right pibot-green',
+      left_arrow_class: '.fa .fa-angle-left .pibot-green',
+      right_arrow_class: '.fa .fa-angle-right .pibot-green',
       directional_arrows: true,
       type: null,
       onShow: function() {},
@@ -63,6 +63,7 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
           this.modal_arrows = this.lightbox_container.find('div.ekko-lightbox-nav-overlay').first();
           this.lightbox_container.find('a' + this.strip_spaces(this.options.left_arrow_class)).on('click', function(event) {
             event.preventDefault();
+            console.log('left')
             return _this.navigate_left();
           });
           this.lightbox_container.find('a' + this.strip_spaces(this.options.right_arrow_class)).on('click', function(event) {
