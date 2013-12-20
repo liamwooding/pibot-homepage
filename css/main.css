@@ -93,8 +93,7 @@ body {
 }
 
 a, p, span {
-	font-weight: 100;
-	letter-spacing: 0.8px;
+	font-weight: 200;
 }
 
 h1, h2, h3 {
@@ -105,6 +104,14 @@ h1, h2, h3 {
   /* Bring main content above the hexbins */
   position: relative;
   z-index: 1;
+}
+
+.jumbotron h1 {
+	margin-bottom: 20px;
+}
+
+.jumbotron .row {
+	margin: 20px 0;
 }
 
 .navbar {
@@ -444,4 +451,16 @@ h1, h2, h3 {
 
 #pioneer .jumbotron {
  	border: 1px #E74D4D solid;
+}
+
+#pioneer .jumbotron ul {
+}
+
+#pioneer .jumbotron ul li {
+
+}
+
+#pioneer .jumbotron ul li b {
+	font-weight: 100;
+	letter-spacing: 0.9px;
 }
