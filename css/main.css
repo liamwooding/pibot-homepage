@@ -215,7 +215,7 @@ h1, h2, h3 {
 .hexagon {
   fill: none;
   stroke: #262626;
-  stroke-width: 0.5px;
+  stroke-width: 3px;
 }
 
 /*
