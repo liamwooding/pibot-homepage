@@ -16,7 +16,9 @@ $(document).ready(function() {
 			'img/hexagons/10.jpg',
 			'img/hexagons/11.jpg',
 			'img/hexagons/12.jpg',
-			'img/hexagons/13.jpg'
+			'img/hexagons/13.jpg',
+			'img/hexagons/14.jpg',
+			'img/hexagons/15.jpg'
 		],
 		imgs = [
 			'img/workshops/1.jpg',
@@ -31,7 +33,9 @@ $(document).ready(function() {
 			'img/workshops/10.jpg',
 			'img/workshops/11.jpg',
 			'img/workshops/12.jpg',
-			'img/workshops/13.jpg'
+			'img/workshops/13.jpg',
+			'img/workshops/14.jpg',
+			'img/workshops/15.jpg'
 		],
 		rowNumber = 0,
 		containerWidth = hexGallery.width(),
