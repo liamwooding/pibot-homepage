@@ -219,7 +219,7 @@ h1, h2, h3 {
 */
 
 #home .jumbotron {
-	border: 1px solid #D4E74D;
+	border: 1px solid white;
 }
 
 #home .jumbotron > img {
