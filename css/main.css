@@ -107,11 +107,15 @@ h1, h2, h3 {
 }
 
 .jumbotron h1 {
-	margin-bottom: 20px;
+	margin:10px 0 30px;
 }
 
 .jumbotron .row {
 	margin: 20px 0;
+}
+
+.img-thumbnail {
+	padding:2px;
 }
 
 .navbar {
