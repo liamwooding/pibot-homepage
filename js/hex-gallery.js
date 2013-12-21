@@ -1,9 +1,6 @@
 $(document).ready(function() {
-	
-	//TODO: crop thumbnail size images for thumbs array
-	
 	var hexGallery = $('#hex-gallery'),
-			thumbs = [
+		thumbs = [
 			'img/hexagons/1.jpg',
 			'img/hexagons/2.jpg',
 			'img/hexagons/4.jpg',
@@ -42,15 +39,16 @@ $(document).ready(function() {
 		hexWidth = 150,
 		hexPadding = 5;
 
-		var hexPerRow = Math.floor(containerWidth / hexWidth),
-			rowOffset = hexWidth * 0.88,
-			hexHeight = hexWidth * 1.1666667,
-			rows = thumbs.length / hexPerRow,
-			i = 0;
+	var hexPerRow = Math.floor(containerWidth / hexWidth),
+		rowOffset = hexWidth * 0.88,
+		hexHeight = hexWidth * 1.1666667,
+		rows = thumbs.length / hexPerRow,
+		i = 0;
 
-		var svg = SVG('hex-gallery').size(containerWidth, (hexHeight * 1.333) * rows)
-		svg.viewbox(0,0,containerWidth, hexHeight * rows),
-		lightBoxContainer = $('#light-box-container')
+	var svg = SVG('hex-gallery').size(containerWidth, (hexHeight * 1.333) * rows);
+	svg.viewbox(0,0,containerWidth, hexHeight * rows);
+
+	var lightBoxContainer = $('#light-box-container');
 
 	for (var j = 0; j < rows; j++) {
 		if (i >= thumbs.length) {
@@ -86,5 +84,5 @@ $(document).ready(function() {
 	$('#hex-gallery').on('click', '.hexImage', function() {
 		console.log($(this).attr('data-lightbox-index'))
 		lightBoxContainer.find('a').eq($(this).attr('data-lightbox-index')).click()
-	})
-})
+	});
+});

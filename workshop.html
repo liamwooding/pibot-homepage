@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PiBot - Raspberry Pi Robot</title>
+	<title>Workshops - PiBot - Raspberry Pi Robot</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -73,6 +73,9 @@
 			<h2>Workshop dates</h2>
 			<h3>Dates and location to be confirmed</h3>
 
+			<div id="hex-gallery"></div>
+			<div id="light-box-container"></div>
+
 			<h2>Frequently Asked Questions</h2>
 			<div id="faqAccordion" class="accordion">
 				<div class="accordion-group">
@@ -141,10 +144,6 @@
 				</div>
 			</div>
 
-			<div id="hex-gallery">
-			</div>
-			<div id="light-box-container">
-			</div>
 		</div>
 
 		<footer class="footer">
@@ -153,8 +152,6 @@
 			</p>
 		</footer>
 	</div>
-
-
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://code.jquery.com/jquery.js"></script>
@@ -169,8 +166,8 @@
 
 	<script src="js/scripts.js"></script>
 
-	<script src="http://d3js.org/d3.v3.min.js"></script>
-	<script src="http://d3js.org/d3.hexbin.v0.min.js?5c6e4f0"></script>
+	<script src="js/d3.v3.min.js"></script>
+	<script src="js/d3.hexbin.v0.min.js"></script>
 	<script>
 		function hexbinify (el) {
 			var margin = {top: 20, right: 20, bottom: 30, left: 40}
@@ -223,7 +220,6 @@
 				})
 			})
 		}()
-
 	</script>
 </body>
 </html>
