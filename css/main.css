@@ -122,6 +122,26 @@ h1, h2, h3 {
 	margin: 20px 0;
 }
 
+.navbar-header {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.navbar-collapse {
+	margin-top: 9em;
+	box-shadow: none;
+}
+.navbar-toggle {
+	background: #000;
+	background: rgba(0, 0, 0, 0.6);
+}
+.navbar-toggle:hover {
+	background: rgba(0, 0, 0, 0.7);
+}
+.navbar-toggle .icon-bar {
+	background: #fff;
+}
+
 .navbar-nav > li:last-child a {
 	margin-right: 0;
 }
@@ -133,26 +153,20 @@ h1, h2, h3 {
 
 .navbar-nav li a {
 	background-color: #262626;
-  background-color: rgba(38, 38, 38, 0.9);
+	background-color: rgba(38, 38, 38, 0.9);
+	margin-top: 5px;
 	border-bottom: 3px solid;
 	border-top: 3px solid;
 	display: block;
 	text-align: center;
-	padding: 15px 0 0;
-	width: 100px;
-	height: 100px;
-	margin: 10px;
 	border-radius: 1px;
 	overflow: visible;
 	font-size: 18px;
-	transition: background-color 0.15s linear,
-		color 0.15s linear;
+	transition: background-color 0.15s linear, color 0.15s linear;
 }
 
 .navbar-nav li i {
-	display: block;
-	padding: 0 0 10px;
-	font-size: 2em;
+	font-size: 1.25em;
 	text-align: center;
 }
 
@@ -163,11 +177,6 @@ h1, h2, h3 {
 
 .navbar-nav > li.active a {
 	cursor: default;
-}
-
-.navbar-nav li span, .navbar-nav li i {
-	display: block;
-	text-align: center;
 }
 
 .navbar > .navbar-brand {
@@ -238,26 +247,18 @@ h1, h2, h3 {
 	margin: 2em auto;
 }
 
-#pibot-carousel {
-	margin: -48px -60px 20px;
-	border-radius: 3px;
-	overflow: hidden;
-}
-
 #pibot-carousel img {
 	width: 100%;
 }
 
 #home .lead {
-	font-size: 2em;
-	position: absolute;
-	top:15px;
-	text-shadow:2px 2px 2px rgba(0,0,0,0.4);
+	font-size: 1.6em;
+	margin: 1em 0;
 }
 
 #home .sub-lead {
-	font-size: 1.6em;
-	margin: 1.4em 0;
+	font-size: 1.2em;
+	margin: 1em 0;
 }
 
 #home .col-md-4 img {
@@ -506,16 +507,51 @@ h1, h2, h3 {
 	letter-spacing: 0.9px;
 }
 
+@media (min-width: 768px) {
+	.navbar-collapse {
+		margin-top: 0;
+	}
+	.navbar-nav li a {
+		width: 100px;
+		height: 100px;
+		margin: 10px;
+		padding: 15px 0 0;
+	}
+	.navbar-nav li i {
+		font-size: 2em;
+		padding: 0 0 5px;
+	}
+	.navbar-nav li span, .navbar-nav li i {
+		display: block;
+		text-align: center;
+	}
+
+	#home #pibot-carousel {
+		margin: -48px -60px 20px;
+		border-radius: 3px;
+		overflow: hidden;
+	}
+	#home .lead {
+		font-size: 2em;
+		position: absolute;
+		top:15px;
+		text-shadow:2px 2px 2px rgba(0,0,0,0.4);
+	}
+	#home .sub-lead {
+		font-size: 1.6em;
+		margin: 1.4em 0;
+	}
+}
+
 @media (min-width: 992px) {
 	.navbar-nav li a {
-		padding: 22px 0 0;
 		width: 140px;
 		height: 140px;
 		font-size: 24px;
 	}
 
 	.navbar-nav li i {
-		padding: 0 0 20px;
+		padding: 6px 0 14px;
 		font-size: 2em;
 	}
 
